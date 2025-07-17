@@ -8,7 +8,7 @@ module.exports = function (passport) {
       {
         clientID: process.env.GITHUB_CLIENT_ID,
         clientSecret: process.env.GITHUB_CLIENT_SECRET,
-        callbackURL: "http://localhost:3000/auth/github/callback",
+        callbackURL: "https://storybook-g850.onrender.com/auth/github/callback",
         proxy: true,
       },
       async (accessToken, refreshToken, profile, done) => {
